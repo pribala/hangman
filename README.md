@@ -1,5 +1,7 @@
 # Hangman
-Hangman Game
+
+
+### Hangman Game
 
 
 This is the classic Hangman game where the player is given
