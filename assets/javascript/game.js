@@ -62,6 +62,7 @@ var displayedWord = [];
 	 if(newGame) {	
 		audioFile.pause();
 	 	gameMessage.innerHTML = "";
+	 	displayMessage.innerHTML = "";
 	 	userChoice = (String.fromCharCode(event.keyCode)).toLowerCase();
 	 	
 	 	hangman();
@@ -93,8 +94,7 @@ var displayedWord = [];
  		audioFile.src = "assets/audio/djlang59_-_Drops_of_H2O_(_The_Filtered_Water_Treatment_).mp3";
        	audioFile.type = "mp3";
        	audioFile.play();
-       	//pickAWord();
-     }
+    }
  }
 
 // Event listener for the next word button
@@ -130,8 +130,7 @@ function hangman() {
  	    	audioFile.src = "assets/audio/crazy-making-loopy-creature.wav";
  	    	audioFile.type = "audio/wav"
  	    	audioFile.play();
- 	    	//pickAWord();
- 		}
+ 	   	}
  	} else {
  		checkUserInput();
   	}
