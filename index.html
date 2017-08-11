@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman Game | Priya Bala</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body onload="pickAWord()">
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+        <h1>HANGMAN<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <figure>
+                    <img class="img-responsive" src="assets/images/hangmanImg.jpg">
+                    <figcaption>Artist: Anya Srinivasan</figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-offset-1 col-md-5 col-sm-6">
+                  <canvas id="imgCanvas" width="200" height="350"></canvas>
+                  <p id="userMessage" class="messageText"></p>
+                </div>
+              </div>  
+            </div>
+            <div class="panel-footer" id="audioFrame">
+              <audio controls id="h2O">
+                <source src="assets/audio/djlang59_-_Drops_of_H2O_(_The_Filtered_Water_Treatment_).mp3" type="audio/mpeg">
+            </audio>
+            <div class="attribution-block"><a href="http://dig.ccmixter.org/files/djlang59/37792">Drops of H2O ( The Filtered Water Treatment )</a> by J.Lang (c) copyright 2012 Licensed under a Creative Commons <a href="http://creativecommons.org/licenses/by/3.0/">Attribution (3.0)</a> license. Ft: Airtone</div>
+            </div>
+        </div>
+        </div>
+        <div class="text-center col-md-6 col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+              	<h3>Press any key to get started!</h3>
+            	<h4>Current Word</h4>
+            	<p id="currentWord" class="guessWord"></p>
+            	<h4>Number of guesses remaining:</h4>
+            	<p id="numOfGuesses"></p>
+            	<h4>Letters already guessed</h4>
+            	<!-- <div class="well" id="lettersGuessed"></div> -->
+            	<button id="nextWord" class="generateWord">Next Word</button>
+            	<p id="dispMessage"></p>
+          	</div>
+          	<div class="panel-footer" id="lettersGuessed">
+          	</div>
+        </div>
+      </div>
+      </div>
+
+   </div>
+   <script src="assets/javascript/game.js"></script>
+</body>
+</html>

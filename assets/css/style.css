@@ -1,0 +1,75 @@
+h1, h3, h4 {
+	font-family: 'Sedgwick Ave Display', cursive;
+	padding-bottom: 20px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+.jumbotron {
+	background-color: #DD4814;
+	font-size: 30px;
+}
+
+.guessWord {
+	font-size: 20px;
+	padding-bottom: 20px;
+	letter-spacing: 15px;
+}
+
+.well {
+	letter-spacing: 15px;
+	background-color: #EBB78A;
+}
+
+.messageText {
+	color: red;
+	font-size: 25px;
+}
+
+.generateWord {
+	background-color: #DD4814;
+	padding: 10px;
+	font-weight; bold;
+	font-family: 'Sedgwick Ave Display', cursive;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.panel {
+	border: 2px dashed #DD4814;
+}
+
+.panel-footer {
+	background-color: #EBB78A;
+}
+
+a, a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.attribution-block {
+	color: black;
+	font-size: 15px;
+}
+
+figcaption {
+	font-family: 'Sedgwick Ave Display', cursive;
+}
+
+#lettersGuessed {
+	letter-spacing: 12px;
+	height: 65px;
+	padding-top: 20px;
+}
+
+.glyphicon {
+    margin-left: 20px;
+}
+
