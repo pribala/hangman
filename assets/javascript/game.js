@@ -20,6 +20,8 @@ if (drawCanvas.getContext) {
 	ctx.font = "20px Arial";
 	ctx.fillStyle = grd;
 	ctx.fillText("Lets Play!!!", 50, 20);
+	ctx.lineWidth = 3;
+	ctx.strokeStyle = "#DD4814";
 }	
 		
 // Declare variables for wins, remaining guesses, user choice
